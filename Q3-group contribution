@@ -1,9 +1,9 @@
-
 import random
 import matplotlib.pyplot as plt
 import numpy as np
 class PolynomialSolver:
     def Func(self,n,L,value):
+# n=order of polynomial ,L=list of coefficients of polynomial
             k=0
             for i in range(n+1):
                     k+=L[i]*(value**i)
@@ -96,9 +96,6 @@ class PolynomialSolver:
                     return(lower)
             else:
                     return None
-method=['bisection','secant','secantRF','newtonraphson']
-p=PolynomialSolver()
 
-for i in method:
-         print (p.solve(2,[20,-12,1],i))
- 
+ # x=PolynomialSolver() 
+ # x.solve(input)
